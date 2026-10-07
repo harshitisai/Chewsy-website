@@ -7,287 +7,298 @@
     <title>Chewsy 99 | Cafe & Restaurant</title>
 </head>
 
+<style>
+
+    body {
+        background-color: #120B3D;
+        color: wheat;
+        cursor: url("pizza-cursor.png") 16 16, auto;
+    }
+
+    #home {
+        background-image: url("bg.png");
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        font-size: xx-large;
+        color: wheat;
+        width: 100%;
+        length: 100%;
+    }
+
+    button {
+        background-color: black;
+        color: wheat;
+        font-size: x-large;
+    }
+
+    button:hover {
+        background-color: black;
+        color: wheat;
+        font-size: xx-large;
+    }
+
+    nav {
+        background-color: rgb(18, 11, 61);
+        color: rgb(231, 225, 225);
+        text-decoration: seashell;
+        justify-content: center;
+        gap: 50px;
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    #menu {
+        font-display: center;
+    }
+
+    .menu-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+
+</style>
+
 <body>
 
-    <!-- Navigation Bar -->
     <header>
+
         <nav>
-            <div class="logo">
-                <h2>🍩Chewsy 99</h2>
-            </div>
-
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <button>Order Now</button>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </nav>
+
+        <main>
+
+            <section id="home">
+
+                <div class="hero-content">
+
+                    <p>WELCOME TO 🍩Bistro 99</p>
+
+                    <h1>
+                        Good Food.
+                        <br>
+                        Good Mood.
+                    </h1>
+
+                    <p>
+                        Fresh ingredients, delicious flavours,<br>
+                        and a little bit of magic in every bite.
+                    </p>
+
+                    <button>Explore Menu</button>
+                    <button>Book a Table</button>
+                    <button>Order Now</button>
+
+                </div>
+
+            </section>
+
+        </main>
+
     </header>
 
 
-    <!-- Hero Section -->
-    <main>
+    <!-- Menu Section -->
 
-        <section id="home">
+    <section id="menu">
 
-            <div class="hero-content">
-                <p>WELCOME TO 🍩Chewsy 99</p>
+        <p>OUR MENU</p>
 
-                <h1>
-                    Good Food.
-                    <br>
-                    Good Mood.
-                </h1>
+        <h2>Something Delicious For Everyone</h2>
 
-                <p>
-                    Fresh ingredients, delicious flavours,
-                    and a little bit of magic in every bite.
-                </p>
+        <div class="menu-container">
 
-                <button>Explore Menu</button>
-                <button>Book a Table</button>
-            </div>
+            <!-- Menu Item 1 -->
 
-            <div class="hero-image">
-                <img src="images/hero-food.jpg" alt="Delicious food at Bistro 99">
-            </div>
+            <article class="menu-card">
 
-        </section>
+                <img src="burgir.png"
+                     alt="Classic Burger"
+                     width="400"
+                     height="250">
 
-
-        <!-- About Section -->
-        <section id="about">
-
-            <div>
-                <p>ABOUT US</p>
-
-                <h2>More Than Just Food</h2>
+                <h3>Classic Burger</h3>
 
                 <p>
-                    At Bistro 99, we believe great food brings people
-                    together. We serve fresh, delicious meals in a
-                    comfortable and friendly environment.
+                    Crispy lettuce, fresh vegetables
+                    and our special sauce.
                 </p>
 
-                <button>Our Story</button>
-            </div>
+                <span>₹249</span>
 
-            <div>
-                <img src="images/about.jpg" alt="Bistro restaurant interior">
-            </div>
-
-        </section>
+            </article>
 
 
-        <!-- Menu Section -->
-        <section id="menu">
+            <!-- Menu Item 2 -->
 
-            <p>OUR MENU</p>
+            <article class="menu-card">
 
-            <h2>Something Delicious For Everyone</h2>
+                <img src="pizza.png"
+                     alt="Cheese Pizza"
+                     width="400"
+                     height="250">
 
-            <div class="menu-container">
-
-                <!-- Menu Item 1 -->
-                <article class="menu-card">
-                    <img src="images/burger.jpg" alt="Classic Burger">
-
-                    <h3>Classic Burger</h3>
-
-                    <p>
-                        Crispy lettuce, fresh vegetables
-                        and our special sauce.
-                    </p>
-
-                    <span>₹249</span>
-                </article>
-
-
-                <!-- Menu Item 2 -->
-                <article class="menu-card">
-                    <img src="images/pizza.jpg" alt="Cheese Pizza">
-
-                    <h3>Cheese Pizza</h3>
-
-                    <p>
-                        Loaded with cheese and fresh
-                        toppings.
-                    </p>
-
-                    <span>₹299</span>
-                </article>
-
-
-                <!-- Menu Item 3 -->
-                <article class="menu-card">
-                    <img src="images/pasta.jpg" alt="Creamy Pasta">
-
-                    <h3>Creamy Pasta</h3>
-
-                    <p>
-                        Creamy, cheesy pasta with
-                        fresh herbs.
-                    </p>
-
-                    <span>₹279</span>
-                </article>
-
-
-                <!-- Menu Item 4 -->
-                <article class="menu-card">
-                    <img src="images/dessert.jpg" alt="Chocolate Dessert">
-
-                    <h3>Chocolate Dessert</h3>
-
-                    <p>
-                        A sweet ending to your
-                        perfect meal.
-                    </p>
-
-                    <span>₹199</span>
-                </article>
-
-            </div>
-
-            <button>View Full Menu</button>
-
-        </section>
-
-
-        <!-- Special Offer -->
-        <section id="offer">
-
-            <div>
-                <p>LIMITED TIME OFFER</p>
-
-                <h2>Weekend Special</h2>
+                <h3>Cheese Pizza</h3>
 
                 <p>
-                    Get 20% OFF on your total bill
-                    every Saturday and Sunday.
+                    Loaded with cheese and fresh
+                    toppings.
                 </p>
 
-                <button>Claim Offer</button>
-            </div>
+                <span>₹299</span>
 
-        </section>
-
-
-        <!-- Why Choose Us -->
-        <section id="features">
-
-            <p>WHY BISTRO 99?</p>
-
-            <h2>Made With Love</h2>
-
-            <div class="features-container">
-
-                <article>
-                    <h3>🍴 Fresh Food</h3>
-                    <p>Fresh ingredients prepared every day.</p>
-                </article>
-
-                <article>
-                    <h3>👨‍🍳 Expert Chefs</h3>
-                    <p>Delicious dishes prepared by skilled chefs.</p>
-                </article>
-
-                <article>
-                    <h3>💕 Cozy Atmosphere</h3>
-                    <p>A comfortable place to relax and enjoy.</p>
-                </article>
-
-                <article>
-                    <h3>⚡ Fast Service</h3>
-                    <p>Great food without the long wait.</p>
-                </article>
-
-            </div>
-
-        </section>
+            </article>
 
 
-        <!-- Contact / Reservation -->
-        <section id="contact">
+            <!-- Menu Item 3 -->
 
-            <div>
-                <p>RESERVE YOUR TABLE</p>
+            <article class="menu-card">
 
-                <h2>Let's Have Dinner Together</h2>
+                <img src="pasta.png"
+                     alt="Creamy Pasta"
+                     width="400"
+                     height="250">
+
+                <h3>Creamy Pasta</h3>
 
                 <p>
-                    Book your table and enjoy an amazing
-                    dining experience at Bistro 99.
+                    Creamy, cheesy pasta with
+                    fresh herbs.
                 </p>
-            </div>
+
+                <span>₹279</span>
+
+            </article>
 
 
-            <form>
+            <!-- Menu Item 4 -->
 
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your Name">
+            <article class="menu-card">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Your Email">
+                <img src="chocolava.png"
+                     alt="Chocolate Dessert"
+                     width="400"
+                     height="250">
 
-                <label for="date">Date</label>
-                <input type="date" id="date">
+                <h3>Chocolate Dessert</h3>
 
-                <label for="people">Number of People</label>
-                <input type="number" id="people" min="1" placeholder="2">
+                <p>
+                    A sweet ending to your
+                    perfect meal.
+                </p>
 
-                <button type="submit">
-                    Book Table
-                </button>
+                <span>₹199</span>
 
-            </form>
+            </article>
 
-        </section>
+        </div>
 
-    </main>
+        <button>View Full Menu</button>
+
+        <img src="">
+
+    </section>
+
+
+    <!-- Contact / About Section -->
+
+    <section id="contact">
+
+        <div>
+
+            <p>RESERVE YOUR TABLE</p>
+
+            <h2>Let's Have Dinner Together</h2>
+
+            <p>
+                Book your table and enjoy an amazing
+                dining experience at Bistro 99.
+            </p>
+
+        </div>
+
+
+        <div id="about">
+
+            <p>ABOUT US</p>
+
+            <h2>More Than Just Food</h2>
+
+            <p>
+                At Bistro 99, we believe great food brings people
+                together. We serve fresh, delicious meals in a
+                comfortable and friendly environment.
+            </p>
+
+            <button>Our Story</button>
+
+        </div>
+
+
+        <div>
+
+            <img src="images/about.jpg"
+                 alt="Bistro 99 restaurant interior">
+
+        </div>
+
+    </section>
 
 
     <!-- Footer -->
+
     <footer>
 
         <div>
+
             <h2>Bistro 99</h2>
 
             <p>
                 Good food. Good people.
                 Great memories.
             </p>
+
         </div>
 
 
         <div>
+
             <h3>Quick Links</h3>
 
             <a href="#home">Home</a>
             <a href="#menu">Menu</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+
         </div>
 
 
         <div>
+
             <h3>Contact</h3>
 
             <p>📍 Gurugram, Haryana</p>
             <p>📞 +91 98765 43210</p>
             <p>✉️ hello@bistro99.com</p>
+
         </div>
 
 
         <div>
+
             <h3>Follow Us</h3>
 
             <a href="#">Instagram</a>
             <a href="#">Facebook</a>
             <a href="#">YouTube</a>
+
         </div>
 
 
